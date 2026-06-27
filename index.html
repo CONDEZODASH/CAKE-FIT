@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fit Cakes — Tortas artesanales saludables elaboradas con ingredientes 100% naturales y nutritivos. Descubre nuestros productos sin azúcar refinada, altos en proteína y gluten free." />
+  <title>Fit Cakes — Repostería Saludable | Placer sin Culpa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========================
+       NAVIGATION
+  ========================= -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="#" class="navbar-logo" id="logo-link">Fit<span>Cakes</span></a>
+
+      <nav class="navbar-links" aria-label="Navegación principal">
+        <a href="#" class="active" id="nav-home">Home</a>
+        <a href="#productos" id="nav-products">Products</a>
+        <a href="#filosofia" id="nav-about">About Us</a>
+        <a href="#footer" id="nav-contact">Contact</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <button class="cart-btn" id="cart-btn" aria-label="Carrito de compras">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="cart-badge" id="cart-badge">0</span>
+        </button>
+
+        <a href="#productos" class="btn-primary" id="order-now-btn">Order Now</a>
+
+        <button class="hamburger" id="hamburger-btn" aria-label="Menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Menú móvil">
+    <a href="#" id="mobile-home">Home</a>
+    <a href="#productos" id="mobile-products">Products</a>
+    <a href="#filosofia" id="mobile-about">About Us</a>
+    <a href="#footer" id="mobile-contact">Contact</a>
+    <a href="#productos" class="btn-primary" style="justify-content: center; margin-top: 8px;" id="mobile-order">Order Now</a>
+  </nav>
+
+  <!-- ========================
+       HERO SECTION
+  ========================= -->
+  <main>
+    <section class="hero" id="hero" aria-label="Sección principal">
+      <div class="hero-inner">
+
+        <div class="hero-content">
+          <div class="hero-badge">🌿 Repostería Saludable</div>
+
+          <h1 class="hero-title">
+            Placer<br/>
+            <em>sin Culpa</em>
+          </h1>
+
+          <p class="hero-subtitle">
+            Tortas artesanales con ingredientes 100% naturales y nutritivos. Disfruta de lo dulce cuidando tu cuerpo.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#productos" class="btn-primary" id="hero-cta-primary">Ver Productos</a>
+            <a href="#filosofia" class="btn-secondary" id="hero-cta-secondary">Nuestra Historia</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Natural</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">0g</span>
+              <span class="stat-label">Azúcar refinada</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">+50</span>
+              <span class="stat-label">Clientes felices</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="hero-image-container">
+            <img
+              src="hero_cake.png"
+              alt="Torta artesanal saludable de Fit Cakes con frosting de crema y nueces caramelizadas"
+              loading="eager"
+            />
+          </div>
+
+          <div class="hero-float-badge">
+            <div class="float-badge-icon">🏆</div>
+            <div class="float-badge-text">
+              <strong>Bestseller</strong>
+              <span>Carrot Cake Fit</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================
+         FEATURES SECTION
+    ========================= -->
+    <section class="features" aria-labelledby="features-heading">
+      <div class="container">
+        <div class="features-grid">
+
+          <div class="feature-card reveal" id="feature-sugar">
+            <div class="feature-icon">🍯</div>
+            <h3 class="feature-title">Sin Azúcar Refinada</h3>
+            <p class="feature-desc">Endulzamos naturalmente con frutas y dátiles para mantener tu energía estable.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-1" id="feature-protein">
+            <div class="feature-icon">💪</div>
+            <h3 class="feature-title">Altas en Proteína</h3>
+            <p class="feature-desc">Elaboradas con harinas funcionales para saciar y nutrir tus músculos.</p>
+          </div>
+
+          <div class="feature-card reveal reveal-delay-2" id="feature-gluten">
+            <div class="feature-icon">✅</div>
+            <h3 class="feature-title">Gluten Free</h3>
+            <p class="feature-desc">Opciones seguras y deliciosas para celíacos e intolerantes al gluten.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         PRODUCTS SECTION
+    ========================= -->
+    <section class="products" id="productos" aria-labelledby="products-heading">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div class="section-header-left">
+            <h2 id="products-heading">Nuestros Favoritos</h2>
+            <p>Descubre las creaciones más amadas por nuestra comunidad, balanceadas y deliciosas.</p>
+          </div>
+          <a href="#productos" class="view-all-link" id="view-all-link">
+            Ver todo el catálogo
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="products-grid">
+
+          <!-- Product 1: Carrot Cake Fit -->
+          <article class="product-card reveal" id="product-carrot" aria-label="Carrot Cake Fit">
+            <div class="product-img">
+              <img src="carrot_cake.png" alt="Carrot Cake Fit con frosting de queso crema y nueces" loading="lazy" />
+              <span class="product-badge keto">Keto Friendly</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Carrot Cake Fit</h3>
+              <div class="product-macros">
+                <span>240 kcal</span>
+                <div class="macro-dot"></div>
+                <span>12g Prot</span>
+              </div>
+              <div class="product-macro-bars">
+                <div class="macro-bar"><div class="macro-bar-fill protein" style="width:55%"></div></div>
+                <div class="macro-bar"><div class="macro-bar-fill carbs" style="width:30%"></div></div>
+                <div class="macro-bar"><div class="macro-bar-fill fat" style="width:25%"></div></div>
+              </div>
+              <div class="product-footer">
+                <div class="product-price"><span>s/ </span>5</div>
+                <button class="add-to-cart-btn" id="add-carrot-btn" aria-label="Agregar Carrot Cake Fit al carrito" data-name="Carrot Cake Fit">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 2: Chocolate con Palta -->
+          <article class="product-card reveal reveal-delay-1" id="product-chocolate" aria-label="Chocolate con Palta">
+            <div class="product-img">
+              <img src="chocolate_palta.png" alt="Torta de chocolate con palta y frambuesas" loading="lazy" />
+              <span class="product-badge vegan">Vegan</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Chocolate con Palta</h3>
+              <div class="product-macros">
+                <span>210 kcal</span>
+                <div class="macro-dot"></div>
+                <span>8g Prot</span>
+              </div>
+              <div class="product-macro-bars">
+                <div class="macro-bar"><div class="macro-bar-fill protein" style="width:35%"></div></div>
+                <div class="macro-bar"><div class="macro-bar-fill carbs" style="width:45%"></div></div>
+                <div class="macro-bar"><div class="macro-bar-fill fat" style="width:40%"></div></div>
+              </div>
+              <div class="product-footer">
+                <div class="product-price"><span>s/ </span>5</div>
+                <button class="add-to-cart-btn" id="add-chocolate-btn" aria-label="Agregar Chocolate con Palta al carrito" data-name="Chocolate con Palta">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 3: Limón y Chía -->
+          <article class="product-card reveal reveal-delay-2" id="product-limon" aria-label="Limón y Chía">
+            <div class="product-img">
+              <img src="limon_chia.png" alt="Torta de limón y chía con glaseado natural" loading="lazy" />
+              <span class="product-badge lowcarb">Low Carb</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Limón y Chía</h3>
+              <div class="product-macros">
+                <span>185 kcal</span>
+                <div class="macro-dot"></div>
+                <span>10g Prot</span>
+              </div>
+              <div class="product-macro-bars">
+                <div class="macro-bar"><div class="macro-bar-fill protein" style="width:48%"></div></div>
+                <div class="macro-bar"><div class="macro-bar-fill carbs" style="width:22%"></div></div>
+                <div class="macro-bar"><div class="macro-bar-fill fat" style="width:30%"></div></div>
+              </div>
+              <div class="product-footer">
+                <div class="product-price"><span>s/ </span>5</div>
+                <button class="add-to-cart-btn" id="add-limon-btn" aria-label="Agregar Limón y Chía al carrito" data-name="Limón y Chía">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 4: Almond Banana -->
+          <article class="product-card reveal reveal-delay-3" id="product-almond" aria-label="Almond Banana">
+            <div class="product-img">
+              <img src="almond_banana.png" alt="Torta de almendra y banana con almendras tostadas" loading="lazy" />
+              <span class="product-badge glutenfree">Gluten Free</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Almond Banana</h3>
+              <div class="product-macros">
+                <span>225 kcal</span>
+                <div class="macro-dot"></div>
+                <span>14g Prot</span>
+              </div>
+              <div class="product-macro-bars">
+                <div class="macro-bar"><div class="macro-bar-fill protein" style="width:62%"></div></div>
+                <div class="macro-bar"><div class="macro-bar-fill carbs" style="width:28%"></div></div>
+                <div class="macro-bar"><div class="macro-bar-fill fat" style="width:35%"></div></div>
+              </div>
+              <div class="product-footer">
+                <div class="product-price"><span>s/ </span>5</div>
+                <button class="add-to-cart-btn" id="add-almond-btn" aria-label="Agregar Almond Banana al carrito" data-name="Almond Banana">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         PHILOSOPHY SECTION
+    ========================= -->
+    <section class="philosophy" id="filosofia" aria-labelledby="philosophy-heading">
+      <div class="container">
+        <div class="philosophy-grid">
+
+          <div class="philosophy-img-wrap reveal">
+            <div class="philosophy-img-container">
+              <img
+                src="philosophy_baking.png"
+                alt="Manos artesanas espolvoreando azúcar natural sobre torta saludable rodeada de ingredientes naturales"
+                loading="lazy"
+              />
+            </div>
+            <div class="philosophy-float-badge">
+              <strong>100%</strong>
+              <span>Ingredientes Reales</span>
+            </div>
+          </div>
+
+          <div class="philosophy-content reveal reveal-delay-1">
+            <div class="section-badge">Nuestra Filosofía</div>
+
+            <h2 class="philosophy-title" id="philosophy-heading">
+              Nourishing the body,<br/>delighting the soul.
+            </h2>
+
+            <p class="philosophy-body">
+              En Fit Cakes, creemos que comer saludable no debería ser un sacrificio. Nuestra misión nació de la necesidad de encontrar postres que no solo fueran deliciosos, sino que también aportaran valor nutricional real a nuestras vidas.
+            </p>
+
+            <p class="philosophy-body">
+              Cada torta es elaborada a mano, utilizando harinas integrales, grasas saludables y el dulzor natural de la tierra. Porque te mereces disfrutar de lo que amas, sin comprometer tu bienestar.
+            </p>
+
+            <ul class="philosophy-list">
+              <li>Producción local y sustentable</li>
+              <li>Sin conservantes ni colorantes artificiales</li>
+              <li>Envases 100% compostables</li>
+            </ul>
+
+            <a href="#productos" class="btn-primary" id="philosophy-cta">Ver el Menú</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         NEWSLETTER SECTION
+    ========================= -->
+    <section class="newsletter" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <div class="newsletter-inner">
+          <div class="newsletter-content reveal">
+            <h2 id="newsletter-heading">Recibe tips saludables<br/>y descuentos exclusivos</h2>
+            <p>Únete a nuestra comunidad y sé el primero en saber sobre nuevos productos.</p>
+          </div>
+          <form class="newsletter-form reveal reveal-delay-1" id="newsletter-form" novalidate>
+            <input
+              type="email"
+              id="newsletter-email"
+              name="email"
+              placeholder="Ingresa tu email"
+              aria-label="Correo electrónico"
+              required
+            />
+            <button type="submit" class="btn-primary" id="newsletter-submit">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+              Suscribirse
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================
+       FOOTER
+  ========================= -->
+  <footer class="footer" id="footer" aria-label="Pie de página">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="footer-logo">Fit<span>Cakes</span></div>
+          <p>Nourishing the body, delighting the soul. Repostería artesanal saludable hecha con amor.</p>
+          <div class="social-links">
+            <!-- Instagram -->
+            <a href="#" class="social-link" id="social-instagram" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <!-- Facebook -->
+            <a href="#" class="social-link" id="social-facebook" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+              </svg>
+            </a>
+            <!-- Share/WhatsApp -->
+            <a href="#" class="social-link" id="social-share" aria-label="Compartir">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#productos" id="footer-all-products">All Products</a></li>
+            <li><a href="#" id="footer-subscriptions">Subscriptions</a></li>
+            <li><a href="#" id="footer-gift-cards">Gift Cards</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#" id="footer-shipping">Shipping Info</a></li>
+            <li><a href="#" id="footer-sitemap">Sitemap</a></li>
+            <li><a href="#" id="footer-terms">Terms of Service</a></li>
+            <li><a href="#" id="footer-privacy">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p style="font-size:14px; color:var(--on-surface-variant); margin-bottom: var(--space-sm);">Recibe tips saludables y descuentos.</p>
+          <form id="footer-newsletter" style="display:flex; gap: var(--space-xs);" novalidate>
+            <input
+              type="email"
+              id="footer-email"
+              placeholder="Email"
+              aria-label="Correo electrónico"
+              style="flex:1; padding: 10px 14px; border: 1.5px solid var(--surface-container-highest); border-radius: var(--rounded); font-family: var(--font-body); font-size:13px; background: var(--surface-container-low); color: var(--on-surface); outline:none; transition: border-color 0.2s;"
+            />
+            <button type="submit" id="footer-newsletter-submit" aria-label="Suscribirse"
+              style="padding: 10px 14px; background: var(--primary); color: white; border: none; border-radius: var(--rounded); cursor:pointer; display:flex; align-items:center; transition: background-color 0.2s;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Fit Cakes. Nourishing the body, delighting the soul.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================
+       TOAST NOTIFICATION
+  ========================= -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <div class="toast-icon">✓</div>
+    <span id="toast-message">¡Producto agregado al carrito!</span>
+  </div>
+
+  <!-- ========================
+       JAVASCRIPT
+  ========================= -->
+  <script>
+    // === Navbar scroll effect ===
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    // === Mobile hamburger menu ===
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    let menuOpen = false;
+
+    hamburgerBtn.addEventListener('click', () => {
+      menuOpen = !menuOpen;
+      hamburgerBtn.setAttribute('aria-expanded', menuOpen);
+      mobileMenu.classList.toggle('open', menuOpen);
+
+      const spans = hamburgerBtn.querySelectorAll('span');
+      if (menuOpen) {
+        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+      } else {
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '';
+        spans[2].style.transform = '';
+      }
+    });
+
+    // Close menu on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menuOpen = false;
+        mobileMenu.classList.remove('open');
+        hamburgerBtn.setAttribute('aria-expanded', false);
+        const spans = hamburgerBtn.querySelectorAll('span');
+        spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+      });
+    });
+
+    // === Cart system ===
+    let cartCount = 0;
+    const cartBadge = document.getElementById('cart-badge');
+    const toast = document.getElementById('toast');
+    const toastMessage = document.getElementById('toast-message');
+    let toastTimer = null;
+
+    function showToast(message) {
+      toastMessage.textContent = message;
+      toast.classList.add('show');
+      if (toastTimer) clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3000);
+    }
+
+    function updateCart(productName) {
+      cartCount++;
+      cartBadge.textContent = cartCount;
+      cartBadge.style.transform = 'scale(1.4)';
+      setTimeout(() => { cartBadge.style.transform = ''; }, 200);
+      showToast(`¡${productName} agregado al carrito! 🎉`);
+    }
+
+    // Add to cart buttons
+    document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const name = e.currentTarget.dataset.name;
+        updateCart(name);
+
+        // Animate button
+        btn.style.transform = 'scale(0.85) rotate(0deg)';
+        setTimeout(() => { btn.style.transform = ''; }, 250);
+      });
+    });
+
+    // === Scroll reveal animations ===
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // === Newsletter form ===
+    document.getElementById('newsletter-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const email = document.getElementById('newsletter-email');
+      if (email.value && email.value.includes('@')) {
+        showToast('¡Suscripción exitosa! Gracias por unirte. 🌿');
+        email.value = '';
+      } else {
+        showToast('Por favor ingresa un email válido.');
+      }
+    });
+
+    document.getElementById('footer-newsletter').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const email = document.getElementById('footer-email');
+      if (email.value && email.value.includes('@')) {
+        showToast('¡Suscripción exitosa! 🌿');
+        email.value = '';
+      }
+    });
+
+    // === Active nav link on scroll ===
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.navbar-links a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 80;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    }, { passive: true });
+
+    // === Cart badge transition ===
+    cartBadge.style.transition = 'transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.2s ease';
+  </script>
+
+</body>
+</html>
